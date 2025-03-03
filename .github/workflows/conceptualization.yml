@@ -1,0 +1,20 @@
+name: Conceptualization of Printing Press
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  planning:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Define printing press concept
+        run: echo "Defining the concept of the Gutenberg Printing Press..."
+
+      - name: Research existing technologies
+        run: echo "Researching movable type and printing methods..."
