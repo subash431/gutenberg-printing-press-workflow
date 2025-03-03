@@ -1,0 +1,23 @@
+name: Testing and Iteration
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_press:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Printing the first test page
+        run: echo "Printing the first page using the prototype press..."
+
+      - name: Evaluating ink distribution
+        run: echo "Checking ink distribution and readability..."
+
+      - name: Improving press mechanics
+        run: echo "Adjusting pressure and refining the printing process..."
