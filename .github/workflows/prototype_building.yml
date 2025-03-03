@@ -1,0 +1,23 @@
+name: Prototype Building
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_prototype:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Assembling the wooden frame
+        run: echo "Building the wooden frame for the printing press..."
+
+      - name: Creating the movable type system
+        run: echo "Carving and arranging movable metal type..."
+
+      - name: Installing ink rollers
+        run: echo "Attaching ink rollers for the printing process..."
